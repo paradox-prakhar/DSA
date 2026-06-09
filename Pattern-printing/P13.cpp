@@ -1,30 +1,25 @@
 //output
+// 1 
+// 2 3 
+// 4 5 6 
+// 7 8 9 10 
+// 11 12 13 14 15 
 
 #include <bits/stdc++.h>
 using namespace std;
  
- void P12(int n){
-     int space = 2*(n-1);
-            for(int i =1; i<=n;i++){
-                //nummber
-                for(int j =1; j<=i;j++){
-                    cout<<j;
-                }
-                //space
-                for(int k =1; k<=space;k++){
-                    cout<<" ";
-                   
-                }   
-                //number
-                for(int j =i; j>=1;j--){
-                    cout<<j;
-                }
-                cout<<endl;
-                space -=2;
+ void P13(int n){
+     int num=1;
+        for(int i =1; i<=n;i++){
+            for (int j=1; j<=i; j++){
+             cout<<num<<" ";
+              num++;
             }   
+            cout<<endl;
         };
+    }
 
 int main(){
-    P12(5);
+    P13(5);
     return 0;
 }
