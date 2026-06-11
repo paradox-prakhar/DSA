@@ -14,15 +14,6 @@ Welcome to my DSA repository! This space documents my learning journey, from bas
 | **6** | **Trees & Graphs** | Traversals (BFS/DFS), BST, pathfinding algorithms. |
 | **7** | **Dynamic Programming** | Memoization, tabulation, and optimization. |
 
-## 📂 Folder Structure
-Each topic is organized into its own directory:
-* `patterns/`
-* `arrays/`
-* `linked-lists/`
-* `trees/`
-* `graphs/`
-* `dp/`
-
 ## 🛠️ Tech Stack
 * **Language**: [Insert Language, e.g., C++, Java, or Python]
 * **Editor**: [e.g., VS Code]
