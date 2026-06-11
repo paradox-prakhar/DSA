@@ -1,52 +1,28 @@
 //Output
-// *      *
-// **    **
-// ***  ***
-// ********
-// ***  ***
-// **    **
-// *      *
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+
 
 #include <bits/stdc++.h>
 using namespace std;
 void P21(int n){
-    int S=(n*2)-2;
-    for (int i =1;i<=n;i++){
-        //star
-        for(int j=1; j<=i;j++){
-            cout<<"*";
-        }    
-        //space
-        for(int j=1;j<=S;j++){
-            cout<<" ";
+    
+    for (int i =0; i<n;i++){
+         for(int j =0; j<n;j++){
+            if(j==n-1 || j==0 || i==0 || i==n-1){
+                cout<<"*";
+            }else{
+                cout<<" ";
+            }
 
-        }
-         for(int j=1; j<=i;j++){
-            cout<<"*";
-        } 
-        S-=2;
-        cout<<endl;
-        
-    }
-    S=2;
-    for (int i =1;i<=n;i++){
-        //star
-        for(int j=1; j<=n-i;j++){
-            cout<<"*";
-        }    
-        //space
-        for(int j=1;j<=S;j++){
-            cout<<" ";
-
-        }
-         for(int j=1; j<=n-i;j++){
-            cout<<"*";
-        }  
-        S+=2;
-        cout<<endl;
+         }
+         cout<<endl;
     }
 }   
 int main() {
-    P21(4);
+    P21(5);
     return 0;
 }
